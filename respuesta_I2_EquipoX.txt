@@ -6,3 +6,14 @@ b- ¿Puede ALFA actualizar su FORK al estado del fork de GAMMA? Sí, es posible.
 Aunque ALFA hizo el fork originalmente del repositorio de BETA, Git permite añadir múltiples remotos. 
 ALFA podría añadir la URL del repositorio de GAMMA como un nuevo remoto, traer sus cambios (fetch) y fusionarlos (merge) en su propia rama de trabajo.
 
+c- ¿Puede GAMMA actualizar su FORK al estado del fork de ALFA? Sí, de la misma manera 
+que en el punto anterior. GAMMA puede configurar el repositorio de ALFA como un remoto, obtener 
+la información de sus ramas y realizar un merge para integrar los cambios que ALFA haya 
+realizado en su fork.
+
+d- ¿Los datos que tenía en mi repositorio, editados por mi, se pierden si
+ quiero actualizar el fork? No se pierden, pero pueden generar conflictos. 
+ Si los cambios realizados localmente afectan a las mismas líneas que la 
+ actualización que se intenta traer, Git pedirá al usuario que resuelva el 
+ conflicto manualmente, decidiendo qué información conservar antes de finalizar 
+ la integración.
