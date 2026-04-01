@@ -1,0 +1,8 @@
+a- ¿Cómo actualizo mi repositorio, al estado que esté el repo que hice FORK? Para actualizar un fork, 
+se debe configurar el repositorio original (el de BETA en este caso) como un remoto adicional, generalmente llamado upstream. 
+Luego, se deben traer los cambios (hacer fetch o pull) desde ese remoto hacia la rama principal local y, finalmente, sincronizarlos con el repositorio propio en GitHub mediante un push.
+
+b- ¿Puede ALFA actualizar su FORK al estado del fork de GAMMA? Sí, es posible. 
+Aunque ALFA hizo el fork originalmente del repositorio de BETA, Git permite añadir múltiples remotos. 
+ALFA podría añadir la URL del repositorio de GAMMA como un nuevo remoto, traer sus cambios (fetch) y fusionarlos (merge) en su propia rama de trabajo.
+
